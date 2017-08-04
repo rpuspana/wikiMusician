@@ -1,8 +1,14 @@
 # https://git-scm.com/docs/gitignore
 # https://help.github.com/articles/ignoring-files
 # Example .gitignore files: https://github.com/github/gitignore
+
+# Brackets stuff
 /bower_components/
 /node_modules/
+
+# Old design
 /css/styleOld.css
 /indexOld.html
+
+# Initial JS spec that does not apply as of July 2017
 /doc/jsDoc.txt
