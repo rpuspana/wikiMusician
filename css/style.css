@@ -18,6 +18,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+
 body, html{
   height: 100%;
   background: #222222;
@@ -27,14 +28,44 @@ body, html{
 .container{
   display: block;
   position: relative;
-  margin: 40px auto;
+  margin: 10px auto;
   height: auto;
-  width: 500px;
+  width: 70%;
   padding: 20px;
+}
+
+.left {
+    float: left;
+    width: 50%;
+}
+.right {
+    float: right;
+    width: 40%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 20px;
+}
+.container:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 480px) {
+    .left, .right {
+        float: none;
+        width: auto;
+    }
 }
 
 h2 {
     color: #AAAAAA;
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+    font-weight: bold;
 }
 
 .container ul{
@@ -51,7 +82,8 @@ ul li{
   float: left;
   width: 100%;
   height: 100px;
-    border-bottom: 1px solid #333;
+  border-bottom: 1px solid #333;
+    margin-top:28px;
 }
 
 ul li input[type=radio]{
@@ -63,7 +95,7 @@ ul li label{
   display: block;
   position: relative;
   font-weight: 300;
-  font-size: 1.35em;
+  font-size: 1.0em;
   padding: 25px 25px 25px 80px;
   margin: 10px auto;
   height: 30px;
@@ -172,8 +204,7 @@ input[type=radio]:checked ~ label{
 }
 
 
-/* Styles for alert...
-by the way it is so weird when you look at your code a couple of years after you wrote it XD */
+/* Styles for alert */
 
 .alert {
     box-sizing: border-box;
@@ -196,6 +227,7 @@ by the way it is so weird when you look at your code a couple of years after you
 .alert p {
     line-height: 1.6em;
     font-size:18px;
+    margin: 10px auto;
 }
 
 .alert a {
