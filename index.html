@@ -13,72 +13,44 @@
     </head>
     <body>
         <div class="alert">
-			<h2>Interactive Eric Clapton Wikipedia</h2>
+			<h2>Eric Clapton interactive wikipedia</h2>
 			<p>
-                I created this game with the thought of letting more people know the biography of the rock god himself, Mr. Eric Clapton. Enjoy !<br>
-                In this first version of the game you will need to bring up your browser's console.
-               <!-- open the modal window-->
-               <button id="myBtn">Click here to learn how.</button>
-
+                Welcome to the Eric Clapton interactive wikipedia!
+                I hope you will learn more about Eric Clapton by playing this game.
 		</div>
 
         <div class="container">
-            <h2>Question about the bio of Eric Clapton</h2>
-            <ul>
-              <li>
-                <input type="radio" id="f-option" name="selector" value="value1">
-                <label for="f-option">Answer 1</label>
+            <div class="left">
+                <h2>Question about the bio of Eric Clapton</h2>
+                <ul>
+                  <li>
+                    <input type="radio" id="f-option" name="selector" value="value1">
+                    <label for="f-option">Answer 1</label>
 
-                <div class="check"></div>
-              </li>
+                    <div class="check"></div>
+                  </li>
+                  <li>
+                    <input type="radio" id="s-option" name="selector" value="value2">
+                    <label for="s-option">Answer 2</label>
 
-              <li>
-                <input type="radio" id="s-option" name="selector" value="value2">
-                <label for="s-option">Answer 2</label>
+                    <div class="check"><div class="inside"></div></div>
+                  </li>
+                  <li>
+                    <input type="radio" id="t-option" name="selector" value="value3">
+                    <label for="t-option">Answer 3</label>
 
-                <div class="check"><div class="inside"></div></div>
-              </li>
-
-              <li>
-                <input type="radio" id="t-option" name="selector" value="value3">
-                <label for="t-option">Answer 3</label>
-
-                <div class="check"><div class="inside"></div></div>
-              </li>
-            </ul>
+                    <div class="check"><div class="inside"></div>
+                  </li>
+                </ul>
+            </div>
+            <div class="right">
+                <img src="img/ec22.jpg" alt="eric clapton picture" />
+            </div>
         </div>
 
     <div class="signature">
-            <p>Made with <i class="much-heart"></i> by <a href="https://codepen.io/AngelaVelasquez">Angela Velasquez</a></p>
+        <p>Made with <i class="much-heart"></i> by <a href="https://codepen.io/AngelaVelasquez">Angela Velasquez</a></p>
     </div>
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3>Bring up your browser's console</h3>
-            <p>
-                <span style="font-weight:bold;">Chrome</span><br>
-                Windows: Ctrl + Shift + J <br>
-                Mac OS: Cmd + Opt + J
-            </p>
-            <p>
-                <span style="font-weight:bold;">Firefox</span><br>
-                Windows: Ctrl + Shift + K<br>
-                Mac OS: Cmd + Opt + K
-            </p>
-            <p>
-                <span style="font-weight:bold;">Internet Explorer</span><br>
-                F12, then click on the “Console” tab
-            </p>
-            <p>
-                <span style="font-weight:bold;">Safari</span><br>
-                Cmd + Opt + C
-            </p>
-          </div>
-        </div>
-
         <script src="js/script.js"></script>
     </body>
 </html>
