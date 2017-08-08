@@ -12,3 +12,6 @@
 
 # Initial JS spec that does not apply as of July 2017
 /doc/jsDoc.txt
+
+# Code stubs
+/codeStubs/
