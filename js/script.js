@@ -48,10 +48,10 @@ Question.prototype.isUserAnswerValid = function (userAnswer) {
     }
 };
 
-document.getElementById('promptButton').addEventListener('click', submitPrompt);
-
-var prompt = document.getElementById('questionForm');
-var promptAnswer = document.getElementById('promptAnswer');
+//document.getElementById('promptButton').addEventListener('click', submitPrompt);
+//
+//var prompt = document.getElementById('questionForm');
+//var promptAnswer = document.getElementById('promptAnswer');
 
 initializeGame();
 
@@ -63,8 +63,8 @@ console.info(questionObjectArray);
 var randomNumber = Math.floor(
     Math.random() * (lastIdxQuestionsArray - firstIdxQuestionsArray + 1)) + firstIdxQuestionsArray;
 
-document.getElementById("formQuestion").textContent =
-    questionObjectArray[randomNumber].qText;
+//document.getElementById("formQuestion").textContent =
+//    questionObjectArray[randomNumber].qText;
 
 //console.log("%s",
 //           questionObjectArray[randomNumber].qText);
