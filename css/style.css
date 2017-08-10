@@ -1,7 +1,7 @@
 /*
  * Game developer Radu Puspana
  * Date           July 2017
- * Game version   1
+ * Game version   1.0
  */
 
 /* homemade-apple-regular - latin */
@@ -18,11 +18,72 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 
 body, html {
   height: 100%;
-  background: #222222;
-    font-family: 'Lato', sans-serif;
+  background: #0c0c0c;
+
+}
+
+.container1 {
+    background: -webkit-linear-gradient(#0c0c0c, #FEAA57); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0c0c0c, #FEAA57); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0c0c0c, #FEAA57); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0c0c0c, #FEAA57); /* Standard syntax (must be last) */
+/*    border: 1px solid red;*/
+    display: block;
+  position: relative;
+  margin: 0px auto;
+  height: auto;
+  width: 80%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+/*  padding: 20px;*/
+}
+
+/* Styles for topContainer */
+
+.topContainer {
+    box-sizing: border-box;
+    width: 84%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    padding: 10px 23px;
+    color: #333;
+    margin: 10px auto;
+
+/*    border: 1px solid blue;*/
+}
+
+.topContainer h2 {
+    margin: 0px;
+    font-family: 'Homemade Apple';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #E4D1A9;
+    font-size: 2.0em;
+}
+
+.topContainer p {
+    line-height: 1.6em;
+    margin: 10px auto;
+    color: #000;
+/*    text-shadow: 1px 1px 4px white;*/
 }
 
 .container {
@@ -30,24 +91,31 @@ body, html {
   position: relative;
   margin: 10px auto;
   height: auto;
-  width: 70%;
+  width: 80%;
   padding: 20px;
+/*
+  border: 3px solid #F2B86B;
+  border-radius: 5px;
+  box-shadow: inset #F2B86B 0px 2px 3px, inset #F2B86B 0px -1px 3px;
+*/
+/*     border: 1px solid green;*/
 }
+
 
 .left {
     float: left;
-    width: 50%;
+    max-width: 65%;
 }
 
 .right {
     float: right;
-    width: 40%;
+    max-width: 35%;
 }
 
-img {
+.right img {
     max-width: 100%;
     height: auto;
-    margin-left: 20px;
+    float: right;
 }
 
 .container:after {
@@ -63,10 +131,10 @@ img {
     }
 }
 
-h2 {
-    color: #AAAAAA;
+.container p {
+    color: #FFF;
     display: block;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-top: 0px!important;
     margin-bottom: 0px!important;
     font-weight: bold;
@@ -80,14 +148,14 @@ h2 {
 }
 
 ul li {
-  color: #AAAAAA;
+  color: #FFF;
   display: block;
   position: relative;
   float: left;
   width: 100%;
   height: 100px;
   border-bottom: 1px solid #333;
-/*    margin-top:28px;*/
+/*  margin-top: 20px;*/
 }
 
 ul li input[type=radio] {
@@ -109,25 +177,25 @@ ul li label {
 }
 
 ul li:hover label {
-    color: #FFFFFF;
+    color: #000;
 }
 
 ul li .check {
   display: block;
   position: absolute;
-  border: 5px solid #AAAAAA;
+  border: 5px solid #FFF;
   border-radius: 100%;
-  height: 25px;
-  width: 25px;
+  height: 17px;
+  width: 17px;
   top: 30px;
   left: 20px;
-    z-index: 5;
-    transition: border .25s linear;
-    -webkit-transition: border .25s linear;
+  z-index: 5;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear;
 }
 
 ul li:hover .check {
-  border: 5px solid #FFFFFF;
+  border: 5px solid #000;
 }
 
 ul li .check::before {
@@ -135,25 +203,26 @@ ul li .check::before {
   position: absolute;
     content: '';
   border-radius: 100%;
-  height: 15px;
-  width: 15px;
-  top: 5px;
-    left: 5px;
+  height: 5px;
+  width: 5px;
+  top: 6px;
+  left: 6px;
   margin: auto;
     transition: background 0.25s linear;
     -webkit-transition: background 0.25s linear;
 }
 
 input[type=radio]:checked ~ .check {
-  border: 5px solid #0DFF92;
+  border: 5px solid #000;
 }
 
 input[type=radio]:checked ~ .check::before {
-  background: #0DFF92;
+  background: #000;
 }
 
 input[type=radio]:checked ~ label {
-  color: #0DFF92;
+  color: #000;
+  font-weight: 800;
 }
 
 .signature {
@@ -164,77 +233,41 @@ input[type=radio]:checked ~ label {
 
 .signature p{
     text-align: center;
-    font-family: Helvetica, Arial, Sans-Serif;
-    font-size: 0.85em;
-    color: #AAAAAA;
-}
-
-.signature .much-heart {
-    display: inline-block;
-    position: relative;
-    margin: 0 4px;
-    height: 10px;
-    width: 10px;
-    background: #AC1D3F;
-    border-radius: 4px;
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.signature .much-heart::before,
-.signature .much-heart::after {
-      display: block;
-  content: '';
-  position: absolute;
-  margin: auto;
-  height: 10px;
-  width: 10px;
-  border-radius: 5px;
-  background: #AC1D3F;
-  top: -4px;
-}
-
-.signature .much-heart::after {
-    bottom: 0;
-    top: auto;
-    left: -4px;
+/*    font-family: Helvetica, Arial, Sans-Serif;*/
+    font-size: 0.70em;
+    color: #6d4a28;
 }
 
 .signature a {
-    color: #AAAAAA;
+    color: #6d4a28;
     text-decoration: none;
     font-weight: bold;
 }
 
-
-/* Styles for alert */
-
-.alert {
-    box-sizing: border-box;
-    background-color: #0DFF92;
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 300;
-    padding: 20px 40px;
-    color: #333;
+.form-button {
+/*    display: inline-block;*/
+    border: none;
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    border-radius: 25px;
+    text-shadow: 1px 1px 3px #666666;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 20px;
+    background: #9b6128;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
 }
 
-.alert h2 {
-    font-size: 22px;
-    color: #232323;
-    margin-top: 0;
-}
-
-.alert p {
-    line-height: 1.6em;
-    font-size:18px;
-    margin: 10px auto;
-}
-
-.alert a {
-    color: #232323;
-    font-weight: bold;
+.form-button:hover {
+  background: #048551;
+  text-decoration: none;
 }
