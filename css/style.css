@@ -1,10 +1,11 @@
 /*
  * Game developer Radu Puspana
- * Date           July 2017
  * Game version   1.0
  */
 
-/* homemade-apple-regular - latin */
+/*** Styles for index.html page ***/
+
+/* Font homemade-apple-regular - latin */
 @font-face {
   font-family: 'Homemade Apple';
   font-style: normal;
@@ -18,7 +19,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-/* montserrat-regular - latin */
+/* Font montserrat-regular - latin */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -35,7 +36,8 @@ body, html {
 
 }
 
-.container1 {
+/*main div*/
+.main-div {
     background: -webkit-linear-gradient(#0c0c0c, #FEAA57); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#0c0c0c, #FEAA57); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#0c0c0c, #FEAA57); /* For Firefox 3.6 to 15 */
@@ -52,8 +54,7 @@ body, html {
 /*  padding: 20px;*/
 }
 
-/* Styles for topContainer */
-
+/* <div class="topContainer"> styles */
 .topContainer {
     box-sizing: border-box;
     width: 84%;
@@ -65,7 +66,6 @@ body, html {
     padding: 10px 23px;
     color: #333;
     margin: 10px auto;
-
 /*    border: 1px solid blue;*/
 }
 
@@ -86,6 +86,8 @@ body, html {
 /*    text-shadow: 1px 1px 4px white;*/
 }
 
+/* div used to hold the form and the image*/
+/* div used to hold the submit and next buttons*/
 .container {
   display: block;
   position: relative;
@@ -100,12 +102,6 @@ body, html {
     float: left;
     max-width: 65%;
 }
-
-/*
-.left-space {
-    margin-left: 42%;
-}
-*/
 
 .right {
     float: right;
@@ -212,6 +208,7 @@ ul li .check::before {
     -webkit-transition: background 0.25s linear;
 }
 
+/*custom radio buttons and label effects*/
 input[type=radio]:checked ~ .check {
   border: 5px solid #000;
 }
@@ -225,33 +222,16 @@ input[type=radio]:checked ~ label {
   font-weight: 800;
 }
 
-.container2 {
-  margin: 10px 8%;
+/* div holding the submit and next buttons.
+   Overwriting the settings of .main-div div */
+.buttons-container {
+  margin: 10px 9.5%;
   width: 51%;
   padding: 5px;
 }
 
-.signature {
-    margin: 10px auto;
-    padding: 10px 0;
-    width: 100%;
-}
-
-.signature p {
-    text-align: center;
-/*    font-family: Helvetica, Arial, Sans-Serif;*/
-    font-size: 0.70em;
-    color: #6d4a28;
-}
-
-.signature a {
-    color: #6d4a28;
-    text-decoration: none;
-    font-weight: bold;
-}
-
+/*div for formatting the submit and next buttons*/
 .form-button {
-/*    display: inline-block;*/
     border: none;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -271,4 +251,23 @@ input[type=radio]:checked ~ label {
 .form-button:hover {
   background: #048551;
   text-decoration: none;
+}
+
+/*footer div*/
+.footer {
+    margin: 10px auto;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 0.70em;
+    color: #6d4a28;
+}
+
+.footer a {
+    color: #6d4a28;
+    text-decoration: none;
+    font-weight: bold;
 }
