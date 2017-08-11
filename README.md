@@ -1,7 +1,7 @@
 # wikiMusician
 A beautiful trivia game about great artists. 
 
-### Episode 1 - The life and music of Eric Clapton
+**Episode 1 - The life and music of Eric Clapton**
 
 ### Download and start the game
 1. Clone or download the game using the "Clone or Download button"
