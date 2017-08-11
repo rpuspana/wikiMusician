@@ -1,5 +1,7 @@
 # wikiMusician
-A beautiful trivia game about great artists. In this episode, the artist is the Rock God himself, Mr. Eric Clapton.
+A beautiful trivia game about great artists. 
+
+Episode 1 - The life and music of Eric Clapton
 
 ### Download and start the game
 1. Clone or download the game using the "Clone or Download button"
