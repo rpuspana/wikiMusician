@@ -17,8 +17,6 @@
        url('../fonts/homemade-apple-v6-latin-regular.svg#HomemadeApple') format('svg'); /* Legacy iOS */
 }
 
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
 /* Font montserrat-regular - latin */
 @font-face {
   font-family: 'Montserrat';
@@ -69,7 +67,7 @@ body, html {
 /*    border: 1px solid blue;*/
 }
 
-.topContainer h2 {
+h2 {
     margin: 0px;
     font-family: 'Homemade Apple';
     font-style: normal;
@@ -227,7 +225,6 @@ input[type=radio]:checked ~ label {
 .buttons-container {
   margin: 10px 9.5%;
   width: 51%;
-  padding: 5px;
 }
 
 /*div for formatting the submit and next buttons*/
@@ -245,7 +242,6 @@ input[type=radio]:checked ~ label {
     font-style: normal;
     font-weight: 400;
     padding: 15px 25px 15px 25px;
-    text-decoration: none;
 }
 
 .form-button:hover {
