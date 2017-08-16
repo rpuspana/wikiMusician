@@ -223,8 +223,8 @@ input[type=radio]:checked ~ label {
 /* div holding the submit and next buttons.
    Overwriting the settings of .main-div div */
 .buttons-container {
-  margin: 10px 9.5%;
-  width: 51%;
+  margin: 10px 8%;
+  width: 50%;
 }
 
 /*div for formatting the submit and next buttons*/
